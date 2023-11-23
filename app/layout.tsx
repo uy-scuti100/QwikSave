@@ -4,8 +4,9 @@ import "./globals.css";
 import { ThemeProvider } from "@/provider/theme-provider";
 import Navbar from "@/components/customcomponents/Navbar";
 import { Toaster } from "@/components/ui/toaster";
+import Footer from "@/components/customcomponents/Footer";
 
-const nunito = Nunito({ subsets: ["latin"] });
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
    title: "QwiksSave | Fintech",
@@ -24,7 +25,7 @@ export default function RootLayout({
 }) {
    return (
       <html lang="en" suppressHydrationWarning className="antialiased">
-         <body className={nunito.className}>
+         <body className={inter.className}>
             <ThemeProvider
                attribute="class"
                defaultTheme="dark"
@@ -33,6 +34,7 @@ export default function RootLayout({
                <Navbar />
                <Toaster />
                {children}
+               <Footer />
             </ThemeProvider>
          </body>
       </html>

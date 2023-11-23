@@ -9,7 +9,7 @@ export default function HeroSection() {
             <span className="font-bold text-primary">Multimedia</span> Asset
             Management for Developers.
          </div>
-         <div className="flex flex-col items-center pt-5 md:flex-row ">
+         <div className="flex flex-col items-center pt-16 pb-20 md:flex-row ">
             <div className="order-2 basis-1/2 md:order-1">
                <p className="text-lg font-medium text-center md:pt-10 md:text-xl lg:text-2xl md:text-left">
                   Welcome to <span className="font-bold">QwikSave</span>. where

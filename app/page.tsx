@@ -3,6 +3,8 @@ import { InfoProp } from "./layout";
 import HeroSection from "@/components/(homepageComponents)/HeroSection";
 import Features from "@/components/(homepageComponents)/Features";
 import CallToAction from "@/components/(homepageComponents)/CallToAction";
+import HowToUse from "@/components/(homepageComponents)/HowToUse";
+import Benefits from "@/components/(homepageComponents)/Benefits";
 
 export default function Home() {
    return (
@@ -10,6 +12,8 @@ export default function Home() {
          <HeroSection />
          <Features />
          <CallToAction />
+         <HowToUse />
+         <Benefits />
       </main>
    );
 }

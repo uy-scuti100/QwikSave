@@ -4,7 +4,7 @@ import React from "react";
 export default function Features() {
    return (
       <section className="max-w-5xl pt-20 mx-auto">
-         <h1 className="text-3xl md:leading-[3rem] leading-[2.5rem]">
+         <h1 className="md:text-4xl text-3xl md:leading-[3rem] leading-[2.5rem]">
             <p className="text-center">
                Unlock Unlimited{" "}
                <span className="text-primary">Creativity </span>{" "}
@@ -55,10 +55,10 @@ export default function Features() {
                   </h1>
                   <article className="pt-5 text-lg">
                      <blockquote>
-                        Decide the fate of your creations. With a quick tag,
+                       &ldquo;Decide the fate of your creations. With a quick tag,
                         choose whether your images should be shared with the
                         world. Want your work to shine on the Discover page?
-                        It's your call, just a tag away.
+                        It&#39;s your call, just a tag away.&rdquo;
                      </blockquote>
                   </article>
                </div>
@@ -136,8 +136,8 @@ export default function Features() {
                   <article className="pt-5 text-lg">
                      <blockquote>
                         Showcase your best work on the Discover page. Let the
-                        world see your creativity. It's not just about finding;
-                        it's about being found.
+                        world see your creativity. It&#39;s not just about finding;
+                        it&#39;s about being found.
                      </blockquote>
                   </article>
                </div>
@@ -163,7 +163,7 @@ export default function Features() {
                      <blockquote>
                         Enjoy the freedom of accessing your categorized assets
                         from anywhere. Need that perfect image for a late-night
-                        coding session or an early morning brainstorm? It's at
+                        coding session or an early morning brainstorm? It&#39;s at
                         your fingertips, no matter where you are.
                      </blockquote>
                   </article>
