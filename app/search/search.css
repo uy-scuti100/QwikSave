@@ -1,0 +1,181 @@
+.grid-container {
+
+    display: grid;
+    grid-template-columns: repeat(3, minmax(300px, 1fr));
+    grid-template-rows: repeat(6, minmax(80px, 1fr));
+    justify-content: center;
+    grid-template-areas:
+        "a b c"
+        "a b c"
+        "d b e"
+        "d b e"
+        "d b f"
+        "d b f"
+    ;
+}
+
+@media screen and (max-width: 964px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+        grid-auto-rows: 80px;
+        grid-template-areas:
+            "a"
+            "a"
+            "b"
+            "b"
+            "b"
+            "b"
+            "b"
+            "b"
+            "c"
+            "c"
+            "d"
+            "d"
+            "d"
+            "d"
+            "e"
+            "e"
+            "f"
+            "f"
+        ;
+
+    }
+}
+
+
+.grid-one {
+    background-image: url(../../public/8.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* overflow: hidden; */
+    animation: hero2 1s ease;
+
+}
+
+.grid-two {
+    background-image: url(../../public/2.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation: animateIn 2s ease;
+    /* background-blend-mode: saturation; */
+
+}
+
+.grid-three {
+    background-image: url(../../public/15.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation: hero 1s ease;
+}
+
+.grid-four {
+    background-image: url(../../public/6.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation: hero2 1s ease;
+}
+
+.grid-five {
+    background-image: url(../../public/9.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation: hero 1s ease;
+}
+
+.grid-six {
+    background-image: url(../../public/11.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation: hero 1s ease;
+}
+
+/* .animate-in {
+    animation: animateIn 0.3s ease 0.15s both;
+} */
+
+
+.hero1 {
+    overflow: hidden;
+    animation: hero 1s ease;
+}
+
+.hero2 {
+    overflow: hidden;
+    animation: hero2 1s ease;
+}
+
+/* animations */
+
+@keyframes link {
+
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+}
+
+@keyframes animateIn {
+    from {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+@keyframes nav {
+
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+
+@keyframes hero {
+
+    0% {
+        transform: translateX(300%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes hero2 {
+
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
